@@ -1,10 +1,28 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <!--user-->
+  <view bindtap="bindViewTap" class="userinfo">
+    <view class="left">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>  
+    <view class="right">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="time">1月12日 星期四</text>
+      <view class="display-row">
+        <icon type="info" size="14"/>
+        <text class="time">本周还未迟到过，继续保持哦~</text>
+      </view>
+    </view>  
   </view>
-  <view class="usermotto" bindtap="showToast" data-hi="WeChat">
-    <text class="user-motto">{{motto}}</text>
+  <!--entry-->
+  <view class="app-container flex-wrp">
+    <view class="flex-item bc_green">
+      <icon type="waiting_circle" size="45"/>
+      <text classs="item-label">上班打卡</text>
+    </view>
+    <view class="flex-item bc_red">
+      <icon type="success" size="45"/>
+      <text classs="item-label">请假审批</text>
+    </view>
   </view>
 </view>

@@ -6,10 +6,14 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
+      "iconPath": "images/demo1.jpg",
+      "selectedIconPath": "images/demo2.jpg",
       "text": "首页"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "iconPath": "images/demo1.jpg",
+      "selectedIconPath": "images/demo2.jpg",
+      "text": "圈子"
     }]
   },
   "window":{
